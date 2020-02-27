@@ -1,0 +1,292 @@
+body {
+	font-family: 'Merriweather', serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/*background-color: #E5E5E5;*/
+	background-color: #FFF;
+}
+
+#userpic {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	display: block;
+	height: 300px;
+	width: 300px;
+	border-radius: 200px;
+}
+
+.centered_text {
+	text-align: center;
+}
+
+/*.header {
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}*/
+
+.main-header {
+	font-size: 3em;
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
+	line-height: 60px;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+.secondary-header {
+	font-size: 0.9em;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1em;
+	color: #757575;
+	letter-spacing: 0.3em;
+	text-decoration: none;
+}
+
+.gray-filtered {
+	-webkit-filter: grayscale(100%);
+  	-moz-filter: grayscale(100%);
+  	-ms-filter: grayscale(100%);
+  	-o-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	filter: gray;
+}
+
+.top-social-linkpic {
+	border-radius: 100px;
+	height: 50px;
+	width: 50px;
+}
+
+.top-social-linkpic:hover {
+	-webkit-filter: none;
+  	-moz-filter: none;
+  	-ms-filter: none;
+  	-o-filter: none;
+  	filter: none;
+  	filter: none;
+}
+
+.bottom-social-linkpic {
+	border-radius: 100px;
+	height: 40px;
+	width: 40px;
+}
+
+#top-social-bar {
+	text-align: center;
+	width: 100%;
+}
+
+#top-social-bar ul {
+	display: inline-block;
+	padding: 0px;
+}
+
+#top-social-bar li {
+	float: left;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#top-social-bar li + li {
+	margin-left: 20px;
+}
+
+#nav {
+	text-align: center;
+	width: 100%;
+}
+
+.stick {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-black {
+	background-color: #000;
+	color: white;
+}
+
+#nav ul {
+	display: inline-block;
+	padding: 0px;
+}
+
+#nav li {
+	float: left;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav li + li {
+	margin-left: 50px;
+}
+
+.bold-hover-link {
+	text-decoration: none;
+	/*float: left;*/
+	margin: 0;
+	padding: 10px;
+	letter-spacing: 0.3em;
+	color: #000;
+}
+
+.bold-hover-link:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+.text-container {
+	width: 80%;
+	margin: auto;
+}
+
+.flex {
+	display: flex;
+	width: 100%;
+}
+
+.centered-flex {
+	align-items: center;
+	justify-content: center;
+}
+
+.columned {
+	flex-flow: column;
+}
+
+.rowed {
+	flex-flow: row;
+}
+
+.small-label {
+	text-decoration: none;
+	font-size: 10px;
+	color: #A7A7A7;
+	text-align: center;
+	margin: 10 0;
+	text-indent: 0;
+}
+
+.bottom-social-buttons-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+}
+
+.inline-image {
+	width: 80%;
+	margin: 10px;
+	/*border-radius: 10px;*/
+}
+
+.bottom-social-buttons-item > a {
+	margin-left: 20px;
+}
+
+.social-network-link {
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 0.2em;
+	font-weight: lighter;
+	margin-left: 20px;
+}
+
+.social-network-link:visited {
+	color: #54515A;
+}
+
+p {
+	display: block;
+	font-size: 1em;
+	text-align: justify;
+	width: 100%;
+	line-height: 2em;
+}
+
+.asidetext_pic {
+	float: right; 
+	width: 50%; 
+	margin: 20px 0px 20px 20px; 
+}
+
+.white-hoverable {
+	color: #FFF;
+}
+
+.white-hoverable:hover {
+	color: #000;
+	background-color: #FFF;
+}
+
+.footer {
+	width: 100%;
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+.bottom-social-buttons-container {
+	background-color: #EEEEEE;
+	padding: 10px 0px;
+}
+
+@media screen and (max-width: 800px) {
+	#nav ul {
+		display: block;
+		width: 100%;
+	}
+	#nav li {
+		float: none;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#nav li + li {
+		margin-left: 0px;
+	}
+
+	#userpic {
+		height: 100px;
+		width: 100px;
+	}
+
+	.text-container {
+		width: 90%;
+	}
+
+	.bottom-social-buttons-item {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+	.bottom-social-buttons-item a {
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+
+	.bottom-social-buttons-item a:hover {
+		background-color: #000;
+		color: #FFF;
+	}
+
+	.inline-image {
+		width: 100%;
+	}
+
+	#dividedPics {
+		flex-flow: column; 
+	}
+
+	.asidetext_pic {
+		width: 100%;
+		margin: 0;
+	}
+}
