@@ -21,14 +21,8 @@ body {
 	text-align: center;
 }
 
-/*.header {
-	font-weight: normal;
-	font-style: normal;
-	text-decoration: none;
-}*/
-
 .main-header {
-	font-size: 3em;
+	font-size: 3vw;
 	font-weight: normal;
 	font-style: normal;
 	color: #000;
@@ -38,7 +32,7 @@ body {
 }
 
 .secondary-header {
-	font-size: 0.9em;
+	font-size: 0.9vw;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1em;
@@ -104,10 +98,10 @@ body {
 }
 
 .stick {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+}	
 
 .stick + .text-container {
 	padding-top: 60px;
@@ -138,8 +132,13 @@ body {
 	margin-left: 50px;
 }
 
+#singlePic {
+	width: 40%;
+}
+
 .bold-hover-link {
 	text-decoration: none;
+	font-size: 0.9vw;
 	/*float: left;*/
 	margin: 0;
 	padding: 10px;
@@ -177,7 +176,7 @@ body {
 
 .small-label {
 	text-decoration: none;
-	font-size: 10px;
+	font-size: 0.7vw;
 	color: #A7A7A7;
 	text-align: center;
 	margin: 10 0;
@@ -216,7 +215,7 @@ body {
 
 p {
 	display: block;
-	font-size: 1em;
+	font-size: 1vw;
 	text-align: justify;
 	width: 100%;
 	line-height: 2em;
@@ -249,6 +248,26 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+	p {
+		font-size: 3vw;
+	}
+
+	.main-header {
+		font-size: 9vw;
+	}
+
+	.secondary-header {
+		font-size: 2.9vw;
+	}
+
+	.bold-hover-link {
+		font-size: 3.5vw;
+	}
+
+	.small-label {
+		font-size: 2vw;
+	}
+
 	#nav ul {
 		display: block;
 		width: 100%;
@@ -286,6 +305,10 @@ p {
 	}
 
 	.inline-image {
+		width: 100%;
+	}
+
+	#singlePic {
 		width: 100%;
 	}
 
